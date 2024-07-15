@@ -1,101 +1,69 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ma服务器-官网</title>
-    <link rel="shortcut icon" href="./favicon_128.ico">
-    <link rel="stylesheet" href="https://pixiaopu.com/assets/css/style.css">
-    <script type="text/javascript" src="https://pixiaopu.com/assets/js/style.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Minecraft服务器主页</title>
     <style>
-    .bj{
-    background-image: url(./assets/img/bg.svg);
-	background-size: cover;
+        body {
+            background-color: #2C333A;
+            font-family: 'MinecraftCNM', 'Press Start 2P', cursive;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            margin: 0;
+            color: #ECEFF1;
         }
-        
+
+        .button-container {
+            margin: 2rem 0;
+        }
+
+        .button {
+            appearance: none;
+            outline: none;
+            border: 2px solid #76D72E;
+            background-color: transparent;
+            color: #76D72E;
+            font-size: 18px;
+            padding: 10px 20px;
+            cursor: pointer;
+            text-transform: uppercase;
+            transition: all 0.3s;
+            margin: 0.5rem;
+        }
+
+        .button:hover {
+            background-color: #76D72E;
+            color: #2C333A;
+        }
+
+        .egg-button {
+            background-color: #ECEFF1;
+            color: #2C333A;
+        }
+
+        .egg-button:hover {
+            background-color: #76D72E;
+            color: #ECEFF1;
+        }
+
+        @font-face {
+            font-family: 'MinecraftCNM';
+            src: url('cnm.ttf') format('truetype');
+        }
     </style>
 </head>
-<body class="bj">
-    <div>
-        <div class="popup popup-tips none popupShow" id="popup">
-            <div class="popup-header">
-                <h3 class="popup-title">
-                    Ma服务器-官网
-                </h3>
-            </div>
-            <div class="popup-main">
-                <p>
-                    
-                </p>
-                <p class="popup-domain">
-                    <span>
-                        Q群
-                    </span>
-                    <strong>
-                        <a href="https://qm.qq.com/q/trYebsWtLq" target="_blank">
-                            点击进入
-                        </a>
-                    </strong>
-                </p>
-                <p class="popup-domain">
-                    <span>
-                      IP
-                    </span>
-                    <strong>
-                        <a href="ip.html" target="_blank">
-                            查看
-                        </a>
-                    </strong>
-                </p>
-                <p class="popup-domain">
-                    <span>
-                        有趣的东西
-                    </span>
-                    <strong>
-                        <a href="6.html" target="_blank">
-                      看看？
-                        </a>
-                    </strong>
-			<p class="popup-domain">
-                    <span>
-                        频道
-                    </span>
-                    <strong>
-                        <a href="https://nightly.paw.msgbyte.com/invite/yfF44BPd" target="_blank">
-                      看看？
-                        </a>
-                    </strong>
-                </p>
-                <p>
-                    
-                    <strong>
-                        装逼让你飞起来
-                    </strong>
-                    
-                </p>
-               <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="500px" height="195px" scrolling=no src="ip.html"></iframe>
-                <p align="center">
-                    <strong>
-                        Ma服务器 - 网站已经配备CDN攻击的你妈全家死光
-                    </strong>
-                </p>
-            </div>
-            <div class="popup-footer">
-                <div class="popup-btn close-pop">
-                    <button type="submit" onclick="javascript:addFavorite2()">收藏本页</button>
-                </div>
-            </div>
-        </div>
+<body>
+    <div class="button-container">
+        <a class="button egg-button" href="#彩蛋链接">神秘彩蛋</a>
+        <a class="button" href="https://jq.qq.com/?_wv=1027&k=YOUR_QQ_GROUP_CODE" target="_blank">加入QQ群</a>
+        <div class="button ip-button">服务器IP: play.examplemc.com</div>
     </div>
-    <script>
-    var _hmt = _hmt || [];
-    (function() {
-    var hm = document.createElement("script");
-    hm.src = "https://hm.baidu.com/hm.js?c8c66b04ea119751dfbc5034876277ba";
-    var s = document.getElementsByTagName("script")[0]; 
-    s.parentNode.insertBefore(hm, s);
-    })();
-    </script>
 </body>
+<div id="xf-MusicPlayer" data-cdnName="https://player.xfyun.club/js"  data-themeColor="xf-original" data-songChart="热歌榜"data-fadeOutAutoplay data-memory="1" data-random="true" data-randomSongList="1"></div>
+<script src="https://player.xfyun.club/js/xf-MusicPlayer/js/xf-MusicPlayer.min.js"></script>
+<script src="https://player.xfyun.club/js/yinghua.js"></script>
 </html>
